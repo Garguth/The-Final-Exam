@@ -72,6 +72,7 @@
     <None Include="Assets\DN\SacredStudent_SchoolDesksAndChairs\Info.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEditor.StandardEvents">
+<<<<<<< HEAD
       <HintPath>Z:/The-Final-Exam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -82,6 +83,31 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Z:/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+<<<<<<< HEAD
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+>>>>>>> d0e8be1610d63e54b4bcb41d489c3350c6e0e515
+>>>>>>> 6d05364d0e0879ffef1f2283d0eb62d2e5581191
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -263,9 +289,16 @@
     <Reference Include="Unity.Locator">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Facebook.Unity.Settings">
+<<<<<<< HEAD
       <HintPath>Z:/The-Final-Exam/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+=======
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+>>>>>>> 6d05364d0e0879ffef1f2283d0eb62d2e5581191
     </Reference>
+=======
+>>>>>>> d0e8be1610d63e54b4bcb41d489c3350c6e0e515
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -285,10 +318,17 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
+<<<<<<< HEAD
       <HintPath>C:/Users/jreece/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/jreece/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+=======
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+>>>>>>> 6d05364d0e0879ffef1f2283d0eb62d2e5581191
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

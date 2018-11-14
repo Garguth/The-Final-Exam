@@ -68,6 +68,7 @@
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
     <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <Reference Include="UnityEditor.StandardEvents">
+<<<<<<< HEAD
       <HintPath>Z:/The-Final-Exam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -78,6 +79,31 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Z:/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+<<<<<<< HEAD
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/msullivan/Desktop/The-Final-Exam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+>>>>>>> d0e8be1610d63e54b4bcb41d489c3350c6e0e515
+>>>>>>> 6d05364d0e0879ffef1f2283d0eb62d2e5581191
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -262,9 +288,16 @@
     <Reference Include="Unity.Locator">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Facebook.Unity.Settings">
+<<<<<<< HEAD
       <HintPath>Z:/The-Final-Exam/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+=======
+      <HintPath>C:/Users/dtongcalix/Desktop/The-Final-Exam/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+>>>>>>> 6d05364d0e0879ffef1f2283d0eb62d2e5581191
     </Reference>
+=======
+>>>>>>> d0e8be1610d63e54b4bcb41d489c3350c6e0e515
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -341,6 +374,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
+<<<<<<< HEAD
       <HintPath>C:/Users/jreece/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
@@ -354,6 +388,21 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/jreece/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+=======
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/msullivan/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+>>>>>>> 6d05364d0e0879ffef1f2283d0eb62d2e5581191
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
