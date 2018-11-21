@@ -31,7 +31,10 @@ public class AudioManager : MonoBehaviour {
     public AudioSource PLAYERISCENTEROFWORLD;
 
 
-
+    static void LargeMonsterDeathF()
+    {
+        
+    }
     private void Awake()
     {
     }

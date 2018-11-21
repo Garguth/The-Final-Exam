@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GiantMonsterScriptTest : MonoBehaviour {
+public class GiantMonsterScript : MonoBehaviour {
+
+
 
 	// Use this for initialization
-	void Start ()
-    {
-
+	void Start () {
+        
 	}
 	
 	// Update is called once per frame
