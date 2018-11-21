@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - monster1
+  - monster2
+  - monster3
+  - battery
+  - sheet1
+  - sheet2
+  - sheet3
+  - sheet4
   layers:
   - Default
   - TransparentFX
