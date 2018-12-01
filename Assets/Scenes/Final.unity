@@ -168,6 +168,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ffde1a2b13219443b86793765745446, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &39706950 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4724766038347482, guid: 0a951ebb30e07464f881f0dd58876e71,
+    type: 2}
+  m_PrefabInternal: {fileID: 1811758075}
 --- !u!1001 &56573918
 Prefab:
   m_ObjectHideFlags: 0
@@ -746,7 +751,7 @@ Prefab:
         type: 2}
       propertyPath: playerTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 39706950}
     - target: {fileID: 114422531792171546, guid: 06dfed121b2b81640a1c01adeb28aef6,
         type: 2}
       propertyPath: checkpoints.Array.data[0]
@@ -816,8 +821,13 @@ Prefab:
         type: 2}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 243978163739986420, guid: b5c7fd0f993ad1646bee08cac7ca6c4e,
+      objectReference: {fileID: 243712303090185794, guid: 94a566c2444aa0d4ebae8f7ab32baf66,
         type: 2}
+    - target: {fileID: 82297667438356542, guid: 06dfed121b2b81640a1c01adeb28aef6,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06dfed121b2b81640a1c01adeb28aef6, type: 2}
   m_IsPrefabAsset: 0
@@ -1194,7 +1204,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2451b11a588bd604ab4f168d1c19a14a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.236
+  m_Volume: 0.111
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2038,6 +2048,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 82997038204241976, guid: 0a951ebb30e07464f881f0dd58876e71,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114850185429464402, guid: 0a951ebb30e07464f881f0dd58876e71,
+        type: 2}
+      propertyPath: gameUI
+      value: 
+      objectReference: {fileID: 473118149}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a951ebb30e07464f881f0dd58876e71, type: 2}
   m_IsPrefabAsset: 0
