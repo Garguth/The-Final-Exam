@@ -23,6 +23,8 @@ public class EnemyPatrol : MonoBehaviour
             return; // error check - returns if no checkpoints set up
         }
 
+        // if on last checkpoint
+
         enemyAgent.destination = checkpoints[destPoint].position; // choose next checkpoint in array as destination
         destPoint = (destPoint + 1) % checkpoints.Length; // move on to next
     }
