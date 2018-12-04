@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyPatrol : MonoBehaviour
 {
+    public Animator zombieAnimator;
     public Transform playerTransform;
     public Transform[] checkpoints;
     public NavMeshAgent enemyAgent;
@@ -18,6 +19,7 @@ public class EnemyPatrol : MonoBehaviour
 
     void GotoNextPoint()
     {
+        zombieAnimator.SetBool("IsPatrolling", true);
         if (checkpoints.Length == 0)
         {
             return; // error check - returns if no checkpoints set up
@@ -35,6 +37,8 @@ public class EnemyPatrol : MonoBehaviour
         {
             playerInView = true;
             Debug.Log("Player in view");
+            zombieAnimator.SetBool("IsPatrolling", false);
+            zombieAnimator.SetBool("IsChasingPlayer", true);
         }
     }
 
@@ -44,6 +48,8 @@ public class EnemyPatrol : MonoBehaviour
         {
             playerInView = false;
             Debug.Log("Player leaving view");
+            zombieAnimator.SetBool("IsPatrolling", true);
+            zombieAnimator.SetBool("IsChasingPlayer", false);
         }
     }
 
