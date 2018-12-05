@@ -29,7 +29,6 @@ public class Player : MonoBehaviour {
             batterylife -= Time.deltaTime;
         }
  
-        //Debug.Log(batterylife);
         if (batterylife <= 100 && batterylife >= 80)
         {
             gameUI.BatteryLife100();
@@ -84,6 +83,14 @@ public class Player : MonoBehaviour {
                 gamemanager.CreditScene();
             }
             
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("enemy"))
+        {
+            gamemanager.CreditScene();
         }
     }
 }
