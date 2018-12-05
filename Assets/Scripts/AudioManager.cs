@@ -2,60 +2,120 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class AudioManager : MonoBehaviour {
 
-    public AudioClip NotePickup;
-    public AudioClip BatteryPickup;
     public AudioClip BackgroudMusic;
     public AudioClip MenuMusic;
-
-    //Monster loop sounds/Ambient noise
-    public AudioClip SmallMonsterLoop;
-    public AudioClip MediumMonsterLoop;
-    public AudioClip LargeMonsterLoop;
-
-    //Death Sounds
-    public AudioClip SmallMonsterDeath;
-    public AudioClip MediumMonsterDeath;
-    public AudioClip LargeMonsterDeath;
-
-    //Detection sounds
-    public AudioClip SmallMonsterDetect;
-    public AudioClip MediumMonsterDetect;
-    public AudioClip LargeMonsterDetect;
-
-    //Audio Sources for Each Object
-    public AudioSource SmallMonster;
-    public AudioSource MediumMonster;
-    public AudioSource LargeMonster;
-    public AudioSource PLAYERISCENTEROFWORLD;
+    public AudioClip CountryRoads;
+    public AudioClip BatteryLow;
+    public AudioSource Player;
+    public AudioSource MainMenuObject;
 
 
-    static void LargeMonsterDeathF()
+    //Monster Sounds and Object Sounds
+    public AudioClip[] MonsterLoop;
+    public AudioClip[] MonsterDetect;
+    public AudioClip[] MonsterDeath;
+    public AudioClip[] PickupNoise;
+    public AudioSource[] Monster;
+    public AudioSource[] Book;
+
+
+
+    public static AudioManager Instance;
+
+
+
+
+    //To call functions here use Public AudioManager FunctionName;
+    //Drag Audio Manager to the public area and hopefully it works.
+
+
+   public void PlayerDeath(int x) 
     {
-        
+        Monster[x].clip = MonsterDeath[x];
+        Monster[x].loop = false;
+        Monster[x].Play();
     }
-    private void Awake()
+
+   public void Bat_Tery(bool LowNot)
     {
+        if (LowNot == true)
+        {
+            Player.clip = BatteryLow;
+            Player.loop = true;
+            Player.Play();
+        }
+        else
+        {
+            Player.loop = false;
+        }
     }
+
+    public void MonsterDetectPlayer(int x) 
+    {
+        Monster[x].clip = MonsterDetect[x];
+        Monster[x].loop = false;
+        Monster[x].Play();
+    }
+
+    public void Pickup(int x)
+    {
+        Player.clip = PickupNoise[x];
+        Player.loop = false;
+        Player.Play();
+    }
+    public void GeneralSoundPlay(AudioClip AudioClip, AudioSource AudioSource, bool Loop)
+    {
+        AudioSource.clip = AudioClip;
+        AudioSource.loop = Loop;
+        AudioSource.Play();
+    }
+    private void BookSound()
+    {
+        for ( int x = 0; x <= 4; x++)
+        {
+            Book[x].clip = CountryRoads;
+            Book[x].loop = true;
+            Book[x].Play();
+        }
+
+    }
+
     void Start ()
     { 
-        LargeMonster.clip = LargeMonsterLoop;
-        LargeMonster.loop = true;
-        LargeMonster.Play();
+        Player.clip = MenuMusic;
+        Player.loop = true;
+        Player.Play();
+    }
 
-        SmallMonster.clip = SmallMonsterLoop;
-        SmallMonster.loop = true;
-        SmallMonster.Play();
-
-        PLAYERISCENTEROFWORLD.clip = BackgroudMusic;
-        PLAYERISCENTEROFWORLD.loop = true;
-        PLAYERISCENTEROFWORLD.Play();
-
+    public void StopMenuMusic()
+    {
+        MainMenuObject.Stop();
     }
 	
+   public void VolumeControl(AudioSource AudioSource, bool UpDown)
+    {
+        if (UpDown == true)
+        {
+            AudioSource.volume += 0.1f;
+        }
+        else
+        {
+            AudioSource.volume -= 0.1f;
+        }
+    }
+
+    public void StopAllMusic()
+    {
+        Monster[0].Stop();
+        Monster[1].Stop();
+        Monster[2].Stop();
+        Player.Stop();
+        MainMenuObject.Stop();
+    }
 	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
