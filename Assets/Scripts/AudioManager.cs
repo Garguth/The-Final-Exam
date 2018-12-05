@@ -9,28 +9,17 @@ public class AudioManager : MonoBehaviour {
     public AudioClip BackgroudMusic;
     public AudioClip MenuMusic;
     public AudioClip CountryRoads;
-
-
-    //Monster loop sounds/Ambient noise
-    public AudioClip[] MonsterLoop;
-
     public AudioClip BatteryLow;
-
-
-
-    //I wanna die
-    public AudioClip[] MonsterDetect;
-
-    //Now you will
-    public AudioClip[] MonsterDeath;
-
-    //Now I die
-    public AudioClip[] PickupNoise;
-
-    //Audio Sources for Each Object
-    public AudioSource[] Monster;
     public AudioSource Player;
     public AudioSource MainMenuObject;
+
+
+    //Monster Sounds and Object Sounds
+    public AudioClip[] MonsterLoop;
+    public AudioClip[] MonsterDetect;
+    public AudioClip[] MonsterDeath;
+    public AudioClip[] PickupNoise;
+    public AudioSource[] Monster;
     public AudioSource[] Book;
 
 
