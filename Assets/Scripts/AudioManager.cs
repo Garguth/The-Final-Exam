@@ -29,7 +29,7 @@ public class AudioManager : MonoBehaviour {
 
 
 
-    //To call functions here use Public AudioManager FunctionName;
+    //To call functions here use public AudioManager FunctionName;
     //Drag Audio Manager to the public area and hopefully it works.
 
 
