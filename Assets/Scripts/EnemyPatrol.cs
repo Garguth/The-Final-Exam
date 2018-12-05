@@ -65,8 +65,15 @@ public class EnemyPatrol : MonoBehaviour
         }
         else if (playerInView)
         {
-            // target the player if player is near enemy, follow path if not
-            enemyAgent.destination = playerTransform.position;
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().toggleOnOff == false)
+            {
+                playerInView = false;
+            }
+            else
+            {
+                // target the player if player is near enemy, follow path if not
+                enemyAgent.destination = playerTransform.position;
+            }
         }
     }
 }

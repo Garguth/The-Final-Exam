@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public GameObject flashLight;
-    bool toggleOnOff;
+    public bool toggleOnOff;
     RaycastHit hit;
     public float distance;
     public float batterylife;
