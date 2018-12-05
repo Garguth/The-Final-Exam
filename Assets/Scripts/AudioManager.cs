@@ -14,13 +14,13 @@ public class AudioManager : MonoBehaviour {
     public AudioSource MainMenuObject;
 
 
-    //Monster Sounds and Object Sounds
+    //MonsterSource Sounds and Object Sounds
     public AudioClip[] MonsterLoop;
     public AudioClip[] MonsterDetect;
     public AudioClip[] MonsterDeath;
     public AudioClip[] PickupNoise;
-    public AudioSource[] Monster;
-    public AudioSource[] Book;
+    public AudioSource[] MonsterSource;
+    public AudioSource[] BookSource;
 
 
 
@@ -29,15 +29,15 @@ public class AudioManager : MonoBehaviour {
 
 
 
-    //To call functions here use Public AudioManager FunctionName;
+    //To call functions here use public AudioManager FunctionName;
     //Drag Audio Manager to the public area and hopefully it works.
 
 
    public void PlayerDeath(int x) 
     {
-        Monster[x].clip = MonsterDeath[x];
-        Monster[x].loop = false;
-        Monster[x].Play();
+        MonsterSource[x].clip = MonsterDeath[x];
+        MonsterSource[x].loop = false;
+        MonsterSource[x].Play();
     }
 
    public void Bat_Tery(bool LowNot)
@@ -56,9 +56,9 @@ public class AudioManager : MonoBehaviour {
 
     public void MonsterDetectPlayer(int x) 
     {
-        Monster[x].clip = MonsterDetect[x];
-        Monster[x].loop = false;
-        Monster[x].Play();
+        MonsterSource[x].clip = MonsterDetect[x];
+        MonsterSource[x].loop = false;
+        MonsterSource[x].Play();
     }
 
     public void Pickup(int x)
@@ -73,17 +73,20 @@ public class AudioManager : MonoBehaviour {
         AudioSource.loop = Loop;
         AudioSource.Play();
     }
-    private void BookSound()
+    public void BookSound()
     {
         for ( int x = 0; x <= 4; x++)
         {
-            Book[x].clip = CountryRoads;
-            Book[x].loop = true;
-            Book[x].Play();
+            BookSource[x].clip = CountryRoads;
+            BookSource[x].loop = true;
+            BookSource[x].Play();
         }
 
     }
+    private void Awake()
+    {
 
+    }
     void Start ()
     { 
         Player.clip = MenuMusic;
@@ -110,9 +113,9 @@ public class AudioManager : MonoBehaviour {
 
     public void StopAllMusic()
     {
-        Monster[0].Stop();
-        Monster[1].Stop();
-        Monster[2].Stop();
+        MonsterSource[0].Stop();
+        MonsterSource[1].Stop();
+        MonsterSource[2].Stop();
         Player.Stop();
         MainMenuObject.Stop();
     }
