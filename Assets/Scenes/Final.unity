@@ -2830,6 +2830,11 @@ Prefab:
       propertyPath: gamemanager
       value: 
       objectReference: {fileID: 843964479}
+    - target: {fileID: 108787378929250896, guid: 0a951ebb30e07464f881f0dd58876e71,
+        type: 2}
+      propertyPath: m_Range
+      value: 26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a951ebb30e07464f881f0dd58876e71, type: 2}
   m_IsPrefabAsset: 0
