@@ -8,19 +8,33 @@ public class AudioManager : MonoBehaviour {
 
     public AudioClip BackgroudMusic;
     public AudioClip MenuMusic;
+    public AudioClip CountryRoads;
+
 
     //Monster loop sounds/Ambient noise
-    public AudioClip SmallMonsterLoop;
-    public AudioClip MediumMonsterLoop;
-    public AudioClip LargeMonsterLoop;
+    public AudioClip[] MonsterLoop;
+
     public AudioClip BatteryLow;
 
+
+
+    //I wanna die
+    public AudioClip[] MonsterDetect;
+
+    //Now you will
+    public AudioClip[] MonsterDeath;
+
+    //Now I die
+    public AudioClip[] PickupNoise;
+
     //Audio Sources for Each Object
-    public AudioSource SmallMonster;
-    public AudioSource MediumMonster;
-    public AudioSource LargeMonster;
+    public AudioSource[] Monster;
     public AudioSource Player;
     public AudioSource MainMenuObject;
+    public AudioSource[] Book;
+
+
+
     public static AudioManager Instance;
 
 
@@ -30,14 +44,14 @@ public class AudioManager : MonoBehaviour {
     //Drag Audio Manager to the public area and hopefully it works.
 
 
-    void MonsterDeath(AudioClip MonsterDeathSound)
+   public void PlayerDeath(int x) 
     {
-        Player.clip = MonsterDeathSound;
-        Player.loop = false;
-        Player.Play();
+        Monster[x].clip = MonsterDeath[x];
+        Monster[x].loop = false;
+        Monster[x].Play();
     }
 
-    void Bat_Tery(bool LowNot)
+   public void Bat_Tery(bool LowNot)
     {
         if (LowNot == true)
         {
@@ -51,29 +65,36 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    void MonsterDetect(AudioClip MonsterDetectSound, AudioSource MonsterType) 
+    public void MonsterDetectPlayer(int x) 
     {
-        MonsterType.clip = MonsterDetectSound;
-        MonsterType.loop = false;
-        MonsterType.Play();
+        Monster[x].clip = MonsterDetect[x];
+        Monster[x].loop = false;
+        Monster[x].Play();
     }
 
-    void Pickup(AudioClip PickupSound)
+    public void Pickup(int x)
     {
-        Player.clip = PickupSound;
+        Player.clip = PickupNoise[x];
         Player.loop = false;
         Player.Play();
     }
-
-    void GeneralSound(AudioClip AudioClip, AudioSource AudioSource)
+    public void GeneralSoundPlay(AudioClip AudioClip, AudioSource AudioSource, bool Loop)
     {
+        AudioSource.clip = AudioClip;
+        AudioSource.loop = Loop;
+        AudioSource.Play();
+    }
+    private void BookSound()
+    {
+        for ( int x = 0; x <= 4; x++)
+        {
+            Book[x].clip = CountryRoads;
+            Book[x].loop = true;
+            Book[x].Play();
+        }
 
     }
 
-    private void Awake()
-    {
-        
-    }
     void Start ()
     { 
         Player.clip = MenuMusic;
@@ -81,12 +102,12 @@ public class AudioManager : MonoBehaviour {
         Player.Play();
     }
 
-    void StopMenuMusic()
+    public void StopMenuMusic()
     {
         MainMenuObject.Stop();
     }
 	
-    void VolumeControl(AudioSource AudioSource, bool UpDown)
+   public void VolumeControl(AudioSource AudioSource, bool UpDown)
     {
         if (UpDown == true)
         {
@@ -98,16 +119,14 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    void StopAllMusic()
+    public void StopAllMusic()
     {
-        SmallMonster.Stop();
-        MediumMonster.Stop();
-        LargeMonster.Stop();
+        Monster[0].Stop();
+        Monster[1].Stop();
+        Monster[2].Stop();
         Player.Stop();
         MainMenuObject.Stop();
     }
 	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
