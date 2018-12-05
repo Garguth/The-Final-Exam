@@ -11,8 +11,9 @@ public class Player : MonoBehaviour {
     public float batterylife;
     [SerializeField]
     GameUI gameUI;
-	// Use this for initialization
-	void Start () {
+    public GameManager gamemanager;
+    // Use this for initialization
+    void Start () {
 
         toggleOnOff = true;
         flashLight.SetActive(toggleOnOff);
@@ -78,6 +79,11 @@ public class Player : MonoBehaviour {
                 Destroy(hit.collider.gameObject);
                 // sheet picked up
             }
+            if (Physics.Raycast(ray, out hit, distance) && hit.collider.gameObject.tag == "Door")
+            {
+                gamemanager.CreditScene();
+            }
+            
         }
     }
 }
