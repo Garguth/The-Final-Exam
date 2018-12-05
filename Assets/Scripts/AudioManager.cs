@@ -15,9 +15,9 @@ public class AudioManager : MonoBehaviour {
 
 
     //MonsterSource Sounds and Object Sounds
-    public AudioClip[] MonsterSourceLoop;
-    public AudioClip[] MonsterSourceDetect;
-    public AudioClip[] MonsterSourceDeath;
+    public AudioClip[] MonsterLoop;
+    public AudioClip[] MonsterDetect;
+    public AudioClip[] MonsterDeath;
     public AudioClip[] PickupNoise;
     public AudioSource[] MonsterSource;
     public AudioSource[] BookSource;
@@ -35,7 +35,7 @@ public class AudioManager : MonoBehaviour {
 
    public void PlayerDeath(int x) 
     {
-        MonsterSource[x].clip = MonsterSourceDeath[x];
+        MonsterSource[x].clip = MonsterDeath[x];
         MonsterSource[x].loop = false;
         MonsterSource[x].Play();
     }
@@ -54,9 +54,9 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    public void MonsterSourceDetectPlayer(int x) 
+    public void MonsterDetectPlayer(int x) 
     {
-        MonsterSource[x].clip = MonsterSourceDetect[x];
+        MonsterSource[x].clip = MonsterDetect[x];
         MonsterSource[x].loop = false;
         MonsterSource[x].Play();
     }
