@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     public GameObject player;
-    public bool gameOver;
 
 	// Use this for initialization
 	void Start () {
