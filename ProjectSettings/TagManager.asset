@@ -8,6 +8,7 @@ TagManager:
   - battery
   - notebook
   - Door
+  - enemy
   layers:
   - Default
   - TransparentFX

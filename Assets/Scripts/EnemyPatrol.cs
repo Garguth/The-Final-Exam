@@ -7,6 +7,7 @@ public class EnemyPatrol : MonoBehaviour
 {
     public Animator zombieAnimator;
     public Transform playerTransform;
+    public GameManager gameManager;
     public Transform[] checkpoints;
     public NavMeshAgent enemyAgent;
     private int destPoint = 0;
