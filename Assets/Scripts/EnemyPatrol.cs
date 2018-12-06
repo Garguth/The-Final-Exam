@@ -10,6 +10,7 @@ public class EnemyPatrol : MonoBehaviour
     public GameManager gameManager;
     public Transform[] checkpoints;
     public NavMeshAgent enemyAgent;
+    public AudioManager audioManager;
     private int destPoint = 0;
     private bool playerInView = false;
 
@@ -36,6 +37,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            audioManager.MonsterDetectPlayer(0);
             playerInView = true;
             Debug.Log("Player in view");
             zombieAnimator.SetBool("IsPatrolling", false);

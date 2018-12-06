@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
     [SerializeField]
     GameUI gameUI;
     public GameManager gamemanager;
+    public AudioManager audioManager;
     // Use this for initialization
     void Start () {
 
@@ -72,6 +73,7 @@ public class Player : MonoBehaviour {
             {
                 Destroy(hit.collider.gameObject);
                 batterylife = batterylife + 20;
+                audioManager.Pickup(0);
             }
             if (Physics.Raycast(ray, out hit, distance) && hit.collider.gameObject.tag == "notebook")
             {
@@ -90,6 +92,7 @@ public class Player : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("enemy"))
         {
+            audioManager.PlayerDeath(0);
             gamemanager.CreditScene();
         }
     }
