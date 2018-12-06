@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
     public float batterylife;
     [SerializeField]
     GameUI gameUI;
+
     public GameManager gamemanager;
     public AudioManager audioManager;
     // Use this for initialization
