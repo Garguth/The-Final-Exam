@@ -19,7 +19,8 @@ public class GameUI : MonoBehaviour {
     Player player;
     [SerializeField]
     Image Battery;
-
+    [SerializeField]
+    private Text NoteBooksPicked;
 
     // Use this for initialization
     void Start () {
@@ -48,6 +49,10 @@ public class GameUI : MonoBehaviour {
     public void BatteryLife0()
     {
         Battery.sprite = BatteryLife5;
+    }
+    public void SetNoteBookText(int num)
+    {
+        NoteBooksPicked.text = "" + num;
     }
     // Update is called once per frame
     void Update () {

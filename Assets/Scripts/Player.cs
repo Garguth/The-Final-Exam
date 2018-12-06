@@ -5,12 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public GameObject flashLight;
+    public GameObject AnswerSheet;
     public bool toggleOnOff;
     RaycastHit hit;
     public float distance;
     public float batterylife;
     [SerializeField]
     GameUI gameUI;
+    private int numberOfNoteBooks;
 
     public GameManager gamemanager;
     public AudioManager audioManager;
@@ -25,7 +27,10 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (numberOfNoteBooks ==4)
+        {
+            AnswerSheet.SetActive(true);
+        }
         if (toggleOnOff == true)
         {
             batterylife -= Time.deltaTime;
@@ -79,14 +84,16 @@ public class Player : MonoBehaviour {
             if (Physics.Raycast(ray, out hit, distance) && hit.collider.gameObject.tag == "notebook")
             {
                 Destroy(hit.collider.gameObject);
+                numberOfNoteBooks++;
                 // sheet picked up
             }
-            if (Physics.Raycast(ray, out hit, distance) && hit.collider.gameObject.tag == "Door")
+            if (Physics.Raycast(ray, out hit, distance) && hit.collider.gameObject.tag == "Answer Sheet")
             {
                 gamemanager.CreditScene();
             }
             
         }
+        gameUI.SetNoteBookText(numberOfNoteBooks);
     }
 
     private void OnTriggerEnter(Collider other)

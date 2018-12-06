@@ -25146,7 +25146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   gamenanager: {fileID: 0}
-  door: {fileID: 0}
+  AnswerSheet: {fileID: 0}
 --- !u!136 &136821568672907846
 CapsuleCollider:
   m_ObjectHideFlags: 1
