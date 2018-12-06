@@ -9,6 +9,10 @@ TagManager:
   - notebook
   - enemy
   - Answer Sheet
+  - Door
+  - RedMonster
+  - YellowMonster
+  - BlueMonster
   layers:
   - Default
   - TransparentFX

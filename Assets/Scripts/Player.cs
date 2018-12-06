@@ -10,6 +10,7 @@ public class Player : MonoBehaviour {
     RaycastHit hit;
     public float distance;
     public float batterylife;
+    private bool AudioIsLooping = true;
     [SerializeField]
     GameUI gameUI;
     private int numberOfNoteBooks;
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour {
         flashLight.SetActive(toggleOnOff);
         distance = 2;
         batterylife = 100;
+
+        // play backgroundmusic loop
 	}
 	
 	// Update is called once per frame
@@ -65,12 +68,12 @@ public class Player : MonoBehaviour {
         }
         else
         {
-            if (Input.GetMouseButtonDown(1))
-            {
-                toggleOnOff = !toggleOnOff;
-            }
+            //if (Input.GetMouseButtonDown(1))
+            //{
+            //    toggleOnOff = !toggleOnOff;
+            //}
 
-            flashLight.SetActive(toggleOnOff);
+            //flashLight.SetActive(toggleOnOff);
         }
         if (Input.GetKeyDown( KeyCode.E))
         {
@@ -101,8 +104,8 @@ public class Player : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("enemy"))
         {
-            audioManager.PlayerDeath(0);
-            gamemanager.CreditScene();
+            //audioManager.PlayerDeath(0);
+            //gamemanager.CreditScene();
         }
     }
 }

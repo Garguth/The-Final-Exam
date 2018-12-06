@@ -11,12 +11,30 @@ public class EnemyPatrol : MonoBehaviour
     public Transform[] checkpoints;
     public NavMeshAgent enemyAgent;
     public AudioManager audioManager;
+    private bool IsLoopPlaying = true;
     private int destPoint = 0;
     private bool playerInView = false;
+
+    void PlayAudioLoop()
+    {
+        if (gameObject.tag == "RedMonster")
+        {
+            audioManager.PlayMonsterLoop(0, IsLoopPlaying);
+        }
+        if (gameObject.tag == "BlueMonster")
+        {
+            audioManager.PlayMonsterLoop(1, IsLoopPlaying);
+        }
+        if (gameObject.tag == "YellowMonster")
+        {
+            audioManager.PlayMonsterLoop(2, IsLoopPlaying);
+        }
+    }
 
 	void Start ()
     {
         GotoNextPoint(); // start patrolling
+        PlayAudioLoop();
 	}
 
     void GotoNextPoint()
@@ -38,6 +56,7 @@ public class EnemyPatrol : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             audioManager.MonsterDetectPlayer(0);
+            PlayAudioLoop();
             playerInView = true;
             Debug.Log("Player in view");
             zombieAnimator.SetBool("IsPatrolling", false);
@@ -49,10 +68,12 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            //audioManager.StopMonsterMusic(0);
             playerInView = false;
             Debug.Log("Player leaving view");
             zombieAnimator.SetBool("IsPatrolling", true);
             zombieAnimator.SetBool("IsChasingPlayer", false);
+            PlayAudioLoop();
         }
     }
 

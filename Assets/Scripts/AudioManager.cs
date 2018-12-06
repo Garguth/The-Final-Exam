@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-public class AudioManager : MonoBehaviour {
-
+public class AudioManager : MonoBehaviour
+{
     public AudioClip BackgroudMusic;
     public AudioClip MenuMusic;
     public AudioClip CountryRoads;
@@ -58,7 +56,7 @@ public class AudioManager : MonoBehaviour {
     {
         MonsterSource[x].clip = MonsterDetect[x];
         MonsterSource[x].loop = false;
-        MonsterSource[x].Play();
+        MonsterSource[x].PlayOneShot(MonsterSource[x].clip);
     }
 
     public void Pickup(int x)
@@ -98,8 +96,12 @@ public class AudioManager : MonoBehaviour {
     {
         MainMenuObject.Stop();
     }
-	
-   public void VolumeControl(AudioSource AudioSource, bool UpDown)
+    public void StopMonsterMusic(int x) // stop monster's source from playing sound
+    {
+        MonsterSource[x].Stop();
+    }
+
+    public void VolumeControl(AudioSource AudioSource, bool UpDown)
     {
         if (UpDown == true)
         {
@@ -119,6 +121,11 @@ public class AudioManager : MonoBehaviour {
         Player.Stop();
         MainMenuObject.Stop();
     }
-	// Update is called once per frame
+
+    public void PlayMonsterLoop(int x, bool OnOff)
+    {
+        MonsterSource[x].clip = MonsterLoop[x]; //Replace variables with correct names if they are wrong Monster[x].loop = true
+        MonsterSource[x].Play();
+    }
 
 }
