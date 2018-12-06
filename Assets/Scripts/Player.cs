@@ -27,9 +27,10 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (numberOfNoteBooks ==4)
+        if (numberOfNoteBooks == 4)
         {
             AnswerSheet.SetActive(true);
+            gameUI.SetFinalAnswer();
         }
         if (toggleOnOff == true)
         {

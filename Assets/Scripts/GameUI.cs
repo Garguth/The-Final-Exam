@@ -21,6 +21,8 @@ public class GameUI : MonoBehaviour {
     Image Battery;
     [SerializeField]
     private Text NoteBooksPicked;
+    [SerializeField]
+    private Text AnswerSheet;
 
     // Use this for initialization
     void Start () {
@@ -53,6 +55,10 @@ public class GameUI : MonoBehaviour {
     public void SetNoteBookText(int num)
     {
         NoteBooksPicked.text = "" + num;
+    }
+    public void SetFinalAnswer()
+    {
+        AnswerSheet.GetComponent<Text>().enabled = true;
     }
     // Update is called once per frame
     void Update () {
