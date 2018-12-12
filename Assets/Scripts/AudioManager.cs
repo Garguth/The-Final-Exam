@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Sounds not in an Array")]
     public AudioClip BackgroudMusic;
     public AudioClip MenuMusic;
     public AudioClip CountryRoads;
     public AudioClip BatteryLow;
-    public AudioSource Player;
-    public AudioSource MainMenuObject;
 
 
-    //MonsterSource Sounds and Object Sounds
+    [Header("Sounds in an Array")]
     public AudioClip[] MonsterLoop;
     public AudioClip[] MonsterDetect;
     public AudioClip[] MonsterDeath;
     public AudioClip[] PickupNoise;
+
+    [Header("Audio Sources")]
     public AudioSource[] MonsterSource;
     public AudioSource[] BookSource;
-
+    public AudioSource Player;
+    public AudioSource MainMenuObject;
 
 
     //public static AudioManager Instance;
@@ -31,7 +33,7 @@ public class AudioManager : MonoBehaviour
     //Drag Audio Manager to the public area and hopefully it works.
 
 
-   public void PlayerDeath(int x) 
+    public void PlayerDeath(int x) 
     {
         MonsterSource[x].clip = MonsterDeath[x];
         MonsterSource[x].loop = false;
