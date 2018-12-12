@@ -104,8 +104,8 @@ public class Player : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("enemy"))
         {
-            //audioManager.PlayerDeath(0);
-            //gamemanager.CreditScene();
+            audioManager.PlayerDeath(0);
+            gamemanager.CreditScene();
         }
     }
 }
