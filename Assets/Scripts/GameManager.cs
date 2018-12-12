@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 	}
      public void CreditScene()
     {
+        
         SceneManager.LoadScene("GameOver");
     }
 }
