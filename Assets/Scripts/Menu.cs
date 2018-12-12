@@ -9,7 +9,10 @@ public class Menu : MonoBehaviour {
     {
         SceneManager.LoadScene("Final");
 	}
-	
+    public void menuScene()
+    {
+        SceneManager.LoadScene("GameMenu");
+    }
     public void CreditScene()
     {
         SceneManager.LoadScene("GameOver");
