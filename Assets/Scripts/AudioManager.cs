@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour
 
     public void MonsterDetectPlayer(int x) 
     {
-        MonsterSource[x].clip = MonsterDetect[x];
+        MonsterSource[x].clip = MonsterDetect[0];
         MonsterSource[x].loop = false;
         MonsterSource[x].PlayOneShot(MonsterSource[x].clip);
     }

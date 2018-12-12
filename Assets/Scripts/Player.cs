@@ -52,10 +52,20 @@ public class Player : MonoBehaviour {
         if (batterylife <= 60 && batterylife >= 40)
         {
             gameUI.BatteryLife60();
+  
+        }
+        if (batterylife == 40)
+        {
+            audioManager.Bat_Tery(true);
+        }
+        if (batterylife == 41)
+        {
+            audioManager.Bat_Tery(false);
         }
         if (batterylife <= 40 && batterylife >= 20)
         {
             gameUI.BatteryLife40();
+     
         }
         if (batterylife <= 20 && batterylife >= 0)
         {
