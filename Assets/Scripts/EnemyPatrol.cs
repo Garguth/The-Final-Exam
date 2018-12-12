@@ -55,7 +55,19 @@ public class EnemyPatrol : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            audioManager.MonsterDetectPlayer(0);
+            if (gameObject.tag == "RedMonster")
+            {
+                audioManager.MonsterDetectPlayer(0);
+            }
+            if (gameObject.tag == "BlueMonster")
+            {
+                audioManager.MonsterDetectPlayer(1);
+            }
+            if (gameObject.tag == "YellowMonster")
+            {
+                audioManager.MonsterDetectPlayer(2);
+            }
+
             PlayAudioLoop();
             playerInView = true;
             Debug.Log("Player in view");
