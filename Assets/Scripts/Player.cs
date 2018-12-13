@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
     public GameObject flashLight;
     public GameObject AnswerSheet;
     public bool toggleOnOff;
+    public AudioClip BGMclip;
+    public AudioSource BGMsource;
     RaycastHit hit;
     public float distance;
     public float batterylife;
