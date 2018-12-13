@@ -55,18 +55,25 @@ MonoBehaviour:
   MenuMusic: {fileID: 8300000, guid: 36b2415019b32f1428ede85ade28625a, type: 3}
   CountryRoads: {fileID: 0}
   BatteryLow: {fileID: 8300000, guid: 61b517782b752de42bb7d82a1c700445, type: 3}
-  Player: {fileID: 0}
-  MainMenuObject: {fileID: 0}
   MonsterLoop:
   - {fileID: 8300000, guid: d99bef0619c268a409b7f6e32661668a, type: 3}
   - {fileID: 8300000, guid: a54d4a3cb85c47d47a7765e241221c51, type: 3}
   - {fileID: 8300000, guid: 0cb577ed4f7aba2498bdfc5ce43d795b, type: 3}
   MonsterDetect:
-  - {fileID: 8300000, guid: 93880ac95a4de8743a39828230631449, type: 3}
+  - {fileID: 8300000, guid: 32c57804bb6f8294c9f8e5d65b2a23f9, type: 3}
   MonsterDeath:
   - {fileID: 8300000, guid: bc523b8ae04d34941a5b0351502013a6, type: 3}
   PickupNoise:
-  - {fileID: 8300000, guid: bc8a093a0e8fd2c4f94539f6b1f9e64a, type: 3}
+  - {fileID: 8300000, guid: 73fdcd2e59f68a245b7bfb99f6293d86, type: 3}
   - {fileID: 8300000, guid: b1db47eda0b5c2a4dac45e7d3a2cf666, type: 3}
-  Monster: []
-  Book: []
+  MonsterSource:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  BookSource:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Player: {fileID: 0}
+  MainMenuObject: {fileID: 0}

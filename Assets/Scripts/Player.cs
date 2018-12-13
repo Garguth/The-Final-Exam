@@ -21,9 +21,8 @@ public class Player : MonoBehaviour {
     void Start () {
 
         toggleOnOff = true;
-        flashLight.SetActive(toggleOnOff);
         distance = 2;
-        batterylife = 100;
+        batterylife = 140;
 
         // play backgroundmusic loop
 	}
@@ -40,7 +39,7 @@ public class Player : MonoBehaviour {
             batterylife -= Time.deltaTime;
         }
  
-        if (batterylife <= 100 && batterylife >= 80)
+        if (batterylife <= 140 && batterylife >= 80)
         {
             gameUI.BatteryLife100();
         }
