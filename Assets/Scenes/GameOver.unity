@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.39818338, g: 0.41653433, b: 0.4135696, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -467,8 +467,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 183, y: -269}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 197.9, y: -269}
+  m_SizeDelta: {x: 581.2, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582706679
 MonoBehaviour:
@@ -513,7 +513,7 @@ MonoBehaviour:
 
 
 
-    AI
+    AI,Debugger, and pretty much fixed the whole game
 
 
     Executive Audio Scripting Producer
@@ -687,8 +687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 183, y: -211.2}
-  m_SizeDelta: {x: 400, y: 1116.3}
+  m_AnchoredPosition: {x: 205.4, y: -211.2}
+  m_SizeDelta: {x: 596.3, y: 1116.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111557297
 MonoBehaviour:
@@ -757,7 +757,7 @@ MonoBehaviour:
 
     Mike Sullivan
 
-    Geovanni Alfaro
+    Geo
 
 
 
@@ -777,7 +777,7 @@ MonoBehaviour:
 
 
 
-    Geovanni Alfaro
+    Geo
 
 
     Big Thank You to
@@ -796,6 +796,11 @@ MonoBehaviour:
     And all the people posting documentation about Unity in google
 
     And also the ladies that work in the caf
+
+    All the youtube tutorials
+
+
+
 
     We couldn''t been able to do this without you!!!
 
