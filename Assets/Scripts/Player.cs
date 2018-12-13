@@ -22,7 +22,7 @@ public class Player : MonoBehaviour {
 
         toggleOnOff = true;
         distance = 2;
-        batterylife = 140;
+        batterylife = 160;
 
         // play backgroundmusic loop
 	}
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour {
             batterylife -= Time.deltaTime;
         }
  
-        if (batterylife <= 140 && batterylife >= 80)
+        if (batterylife <= 160 && batterylife >= 80)
         {
             gameUI.BatteryLife100();
         }
