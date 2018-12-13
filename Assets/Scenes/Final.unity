@@ -14526,7 +14526,7 @@ Prefab:
       objectReference: {fileID: 451068012}
     - target: {fileID: 1522563202299354, guid: e9be2e8fd919eb74e89cc8f5d1a2d864, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114046185816452660, guid: e9be2e8fd919eb74e89cc8f5d1a2d864,
         type: 2}
@@ -14557,6 +14557,16 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 82093214656333260, guid: e9be2e8fd919eb74e89cc8f5d1a2d864,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82093214656333260, guid: e9be2e8fd919eb74e89cc8f5d1a2d864,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9be2e8fd919eb74e89cc8f5d1a2d864, type: 2}
@@ -17141,6 +17151,16 @@ Prefab:
     - target: {fileID: 4772555537445948, guid: 06dfed121b2b81640a1c01adeb28aef6, type: 2}
       propertyPath: m_LocalPosition.z
       value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 82346801818458906, guid: 06dfed121b2b81640a1c01adeb28aef6,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82346801818458906, guid: 06dfed121b2b81640a1c01adeb28aef6,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -25065,7 +25085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1499614030
 Transform:
   m_ObjectHideFlags: 0
@@ -31856,6 +31876,16 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82346801818458906, guid: 06dfed121b2b81640a1c01adeb28aef6,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82346801818458906, guid: 06dfed121b2b81640a1c01adeb28aef6,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06dfed121b2b81640a1c01adeb28aef6, type: 2}
