@@ -77,15 +77,6 @@ public class Player : MonoBehaviour {
             flashLight.SetActive(false);
             gameUI.BatteryLife0();
         }
-        else
-        {
-            //if (Input.GetMouseButtonDown(1))
-            //{
-            //    toggleOnOff = !toggleOnOff;
-            //}
-
-            //flashLight.SetActive(toggleOnOff);
-        }
         if (Input.GetKeyDown( KeyCode.E))
         {
             Ray ray;
